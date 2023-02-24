@@ -10,22 +10,11 @@
   <br>
   <div>
     <div class="container text-left bg-white text-dark row g-6 border rounded">
-      <!-- <div class="row align-items-start">
-    <div class="col-12 table-responsive">
-      <form action="" method="POST">
-        <center>
-          <h3>PRUEBA Usuario</h3>
-        </center>
-        {{form|crispy}}
-        {% csrf_token %}
-        <div class="form-group">
-          <button type="submit" class="btn btn-success btn-lg btn-block">Registrar</button>
-        </div>
-      </form>
-    </div>
-  </div> -->
-<h3>Registrar Usuario</h3>
+      <!-- REGISTRAR USUARIO INICIO -->
+      <h3>Registrar Usuario</h3>
       <form class="row g-3">
+        <!-- REGISTRAR INICIO FIN -->
+        <!-- INICIO CAMPO TIPO DE DOCUMENTO -->
         <div class="col-md-4">
           <label for="validationServer04" class="form-label">Tipo de documento</label>
           <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback"
@@ -40,6 +29,8 @@
             Campo obligatorio.
           </div>
         </div>
+        <!-- FIN CAMPO TIPO DE DOCUMENTO -->
+        <!-- INICIO CAMPO NUMERO DE DOCUMENTO -->
         <div class="col-md-4">
           <label for="validationServer01" class="form-label">Número de documento</label>
           <input type="number" class="form-control is-valid" id="validationServer01" value="Mark" required>
@@ -47,20 +38,26 @@
             Looks good!
           </div>
         </div>
+        <!-- FIN NUMERO DE DOCUMENTO -->
+        <!-- INICIO CAMPO NOMBRE -->
         <div class="col-md-4">
           <label for="validationServer01" class="form-label">Nombre</label>
-          <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+          <input type="text" class="form-control is-valid" id="validationServer01">
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
+        <!-- FIN NOMBRE-->
+        <!-- INICIO CAMPO APELLIDO -->
         <div class="col-md-4">
           <label for="validationServer02" class="form-label">Apellido</label>
-          <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+          <input type="text" class="form-control is-valid" id="validationServer02">
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
+        <!-- FIN CAMPO APELLIDO -->
+        <!-- INICIO CAMPO CORREO ELECTRONICO -->
         <div class="col-md-4">
           <label for="validationServerUsername" class="form-label">Correo Electronico</label>
           <div class="input-group has-validation">
@@ -72,6 +69,8 @@
             </div>
           </div>
         </div>
+        <!-- FIN CAMPO CORREO ELECTRONICO -->
+        <!-- INICIO CAMPO TELEFONO/CELULAR -->
         <div class="col-md-4">
           <label for="validationServer03" class="form-label">Telefono/Celular</label>
           <input type="text" class="form-control is-invalid" id="validationServer03"
@@ -80,6 +79,8 @@
             Campo obligatorio.
           </div>
         </div>
+        <!-- FIN CAMPO TELEFONO/CELULAR -->
+        <!-- INICIO CAMPO TIPO DE USUARIO -->
         <div class="col-md-3">
           <label for="validationServer04" class="form-label">Tipo de Usuario</label>
           <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback"
@@ -91,6 +92,8 @@
             Campo obligatorio.
           </div>
         </div>
+        <!-- FIN CAMPO TELEFONO/CELULAR -->
+        <!-- INICIO CAMPO USUARIO -->
         <div class="col-md-3">
           <label for="validationServer05" class="form-label">Usuario</label>
           <input type="text" class="form-control is-invalid" id="validationServer05"
@@ -99,6 +102,8 @@
             Campo obligatorio.
           </div>
         </div>
+        <!-- FIN CAMPO USUARIO -->
+        <!-- INICIO CAMPO CONTRASEÑA -->
         <div class="col-md-3">
           <label for="validationServer05" class="form-label">Contraseña</label>
           <input type="password" class="form-control is-invalid" id="validationServer05"
@@ -107,6 +112,8 @@
             Campo obligatorio.
           </div>
         </div>
+        <!-- FIN CAMPO CONTRASEÑA -->
+        <!-- INICIO CAMPO CONFIRMAR CONTRASEÑA-->
         <div class="col-md-3">
           <label for="validationServer05" class="form-label">Confirmar Contraseña</label>
           <input type="password" class="form-control is-invalid" id="validationServer05"
@@ -115,10 +122,14 @@
             Campo obligatorio.
           </div>
         </div>
+        <!-- FIN CAMPO CONFIRMAR CONTRASEÑA-->
+        <!-- INICIO BOTON REGISTRAR  -->
         <div class="col-12">
           <button class="btn btn-success" type="submit">Registrar</button>
         </div>
+        <!-- FIN BOTON REGISTRAR  -->
       </form>
+      <!-- FIN FORMULARIO REGISTRAR USUARIO -->
     </div>
   </div>
 </center>
