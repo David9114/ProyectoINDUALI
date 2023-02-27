@@ -1,5 +1,6 @@
 {% extends 'partials/body.html' %}
 {% load static %}
+
 {% block contenido %}
 
 <section class="vh-80 gradient-custom">
@@ -20,7 +21,7 @@
                 <input type="password" id="typePasswordX" class="form-control form-control-lg" />
                 <h3 <label class="form-label" for="typePasswordX">Contraseña</label></h3>
               </div>
-              <a href="{% url 'inicioAdmin' %}" class="btn btn-outline-light btn-lg px-1">Ingresar</a>
+              <a href="{% url 'inicioAdmin' %}" class='bx bx-user-check'>Prueba</a>
             </div>
           </div>
         </div>
@@ -28,6 +29,5 @@
     </div>
   </div>
 </section>
-
 
 {% endblock contenido %}
