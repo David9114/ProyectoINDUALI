@@ -3,13 +3,15 @@
 {% load static %}
 
 {% block contenido %}
-
+<center>
+<br>
+<br>
 <form class="form-inline my-3 my-lg-3">
-  <a href="{% url 'usuarios_crear'%}" class="btn btn-primary"><i class="bi bi-card-list"></i> CREAR USUARIO </a>
+  <a href="{% url 'usuarios_crear'%}" class="btn btn-success"><i class="bi bi-card-list"></i> CREAR USUARIO </a>
 </form>
-
 </section>
 <section id="tablaUsuario">
+</center>
   <section class="col-lg-12 table">
     <div class="container text-center bg-white text-dark row g-6 border rounded">
       <div class="row align-items-start">
@@ -54,5 +56,4 @@
       {% endfor %}
     </tbody>
     </table>
-
     {% endblock contenido %}

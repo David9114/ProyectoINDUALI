@@ -2,8 +2,9 @@
 {% block contenido %}
 
 <center>
+  <br>
   <form class="form-inline my-3 my-lg-3">
-    <a href="{% url 'ingrediente-crear'%}" class="btn btn-primary"><i class="bi bi-card-list"></i> CREAR INGREDIENTE
+    <a href="{% url 'ingrediente-crear'%}" class="btn btn-success"><i class="bi bi-card-list"></i> CREAR INGREDIENTE
     </a>
   </form>
   <section id="tablaUsuario">
@@ -32,7 +33,7 @@
               <td>{{items.unidadMedida}}</td>
               <td>{{items.cantidadMateriaPrima}}</td>
               <td>
-                
+
                 <!-- Boton disparar Modal -->
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Editar
@@ -51,8 +52,7 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No</button>
-                        <a type="button" class="btn btn-success" href="{% url 'editar' items.id %}"
-                          role="button">Si</a>
+                        <a type="button" class="btn btn-success" href="{% url 'editar' items.id %}" role="button">Si</a>
                       </div>
                     </div>
                   </div>
@@ -77,8 +77,8 @@
                         ¿Esta seguro que desea inactivar el registro?
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">No</button>
-                        <a type="button" class="btn btn-warning" href="{% url 'eliminar' items.id %}"
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No</button>
+                        <a type="button" class="btn btn-success" href="{% url 'eliminar' items.id %}"
                           role="button">Si</a>
                       </div>
                     </div>
