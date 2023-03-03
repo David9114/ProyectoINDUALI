@@ -38,19 +38,19 @@
                 <h2 class="fw-bold mb-2 text-uppercase">Sistema de control de Alimentos INDUALI</h2>
                 <p class="text-white-50 mb-5">Por favor ingrese los datos de registro</p>
                 {% csrf_token %}
-                <h3 <label class="form-label" for="typeEmailX">Usuario</label></h3>
+                <h3 class="form-label" for="typeEmailX">Usuario</label></h3>
                 <div class="form-outline form-white mb-5">
                   {{form.username}}
                 </div>
                 <br>
-                <h3 <label class="form-label" for="typePasswordX">Contraseña</label></h3>
+                <h3 class="form-label" for="typePasswordX">Contraseña</label></h3>
                 <div class="form-outline form-white mb-1">
                   {{form.password}}
                 </div>
                 <br>
                 <br>
                 <div><a href="{% url 'principal' %}" class="btn btn-outline-light btn-lg px-1" type="submit">
-                    <i class="fas fa-user-tie"></i>INGRESAR
+                    <i class="fas fa-user-tie"></i>INGRESAR 
                     <a href="#!" class="text-white-50 fw-bold">
                 </div>
               </div>
