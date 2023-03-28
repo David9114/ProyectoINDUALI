@@ -6,36 +6,33 @@ from usuarios.models import Usuario
 
 
 def principal(request):
-    titulo="Menu principal"
-    context={
-        'titulo':titulo
+    titulo = "Menu principal"
+    context = {
+        'titulo': titulo
     }
-    return render(request,'menu.html',context)
+    return render(request, 'menu.html', context)
 
 
 def inicioAdmin(request):
-    titulo="Tablero Principal"
-    cantidad_usuarios= Usuario.objects.all().count()
-    
-    labels_stock=[]
-    data_stock=[]
-   
+    titulo = "Tablero Principal"
+    cantidad_usuarios = Usuario.objects.all().count()
 
-    context={
-        'titulo':titulo,
-        'cantidad_usuarios':cantidad_usuarios,
+    labels_stock = []
+    data_stock = []
+
+    context = {
+        'titulo': titulo,
+        'cantidad_usuarios': cantidad_usuarios,
         'labels_stock': labels_stock,
-        'data_stock':data_stock,
+        'data_stock': data_stock,
     }
-    return render(request,'index-admin.html', context)
+    return render(request, 'index-admin.html', context)
 
 
-def error_404(request,exception):
-    context={}
-    return render(request,'404.html',context)
+def error_404(request, exception):
+    return page_not_found(request, '404.html')
 
 
 def logout_user(request):
     logout(request)
     return redirect('inicio')
-

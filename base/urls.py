@@ -28,7 +28,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', login.as_view(), name='inicio'),
     path('logout/', logout_user, name="logout"),
-    # path('logout/', views.logout_request, name="logout"),
     path('principal/', principal, name='principal'),
     path('usuarios/', include('usuarios.urls')),
     path('centroCostos/', include('centroCostos.urls')),
