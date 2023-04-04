@@ -31,7 +31,7 @@ urlpatterns = [
     path('principal/', principal, name='principal'),
     path('usuarios/', include('usuarios.urls')),
     path('centroCostos/', include('centroCostos.urls')),
-    path('componente/', include('componente.urls')),
+    path('componente/', include('componente.urls')), 
     path('recetas/', include('receta.urls')),
     path('ingrediente/', include('ingrediente.urls')),
     path('estandarizador/', include('estandarizador.urls')),

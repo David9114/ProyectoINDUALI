@@ -10,7 +10,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
-@login_required(login_url='inicio')
+# @login_required(login_url='inicio')
 def usuarios(request):
     titulo = "Usuarios"
     usuarios = Usuario.objects.all()
@@ -18,7 +18,7 @@ def usuarios(request):
         'titulo': titulo,
         'usuarios': usuarios
     }
-    return render(request, 'usuarios/usuarios.html', context)
+    return render(request, 'usuarios/usuarios_listado.html', context)
 
 
 def usuarios_crear(request):
