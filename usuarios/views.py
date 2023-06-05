@@ -12,7 +12,7 @@ from django.contrib.auth.models import Group
 # Create your views here.
 
 
-@login_required(login_url='inicio')
+# @login_required(login_url='inicio')
 def usuarios(request):
     titulo = "Usuarios"
     usuarios = Usuario.objects.all()
